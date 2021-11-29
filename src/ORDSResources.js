@@ -1,6 +1,5 @@
 // /src/ORDSResources.js
 import fetch from "node-fetch";
-//import {data} from './index.js';
 
 export default class ORDSResource {
     constructor( pUrl ){
