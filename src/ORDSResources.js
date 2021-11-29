@@ -36,7 +36,18 @@ export default class ORDSResource {
             method: 'DELETE',
             })
         .then(pResponse => pResponse.text())
-        .then(pResponse => console.log(pResponse))
+        .then(pResponse => console.log(pResponse));
+    }
+
+    async modify(id, data){
+      fetch(this.url + '/' + id, {
+        method: 'PUT',
+        body: JSON.stringify(data),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })
+      .then(pResponse => pResponse.text());
     }
 
     async postData(data){

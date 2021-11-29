@@ -9,3 +9,5 @@ const data = {
 await lResource.postData(data);
 console.log(await lResource.loadAll());
 console.log(await lResource.loadOne(277));
+console.log(await lResource.loadLinks());
+console.log(await lResource.modify(298, data));
