@@ -50,7 +50,6 @@ export default class ORDSResource {
     }
 
     async postData(data){
-        console.log(data);
         return await fetch(this.url, {
             method: 'POST',
             body: JSON.stringify(data),
